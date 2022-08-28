@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="118dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/Prize"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/Prize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="246dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintStart_toStartOf="@+id/Prize"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pixel 3a" />
+
+    <TextView
+        android:id="@+id/Prize"
+        android:layout_width="246dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintStart_toStartOf="@+id/Description"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Price - 65000" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="272dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="28dp"
+        android:padding="0dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@+id/Prize"
+        tools:text="Pixel 3a Premium for Less Price" />
+</androidx.constraintlayout.widget.ConstraintLayout>
